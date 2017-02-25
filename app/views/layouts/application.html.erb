@@ -4,11 +4,23 @@
     <title>Hackbu</title>
     <%= csrf_meta_tags %>
 
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet"> 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+     <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <%= link_to root_path, class: "navbar-brand" do %>
+            <i class="fa fa-paper-plane"></i>
+            Place Holder Company Name
+        <% end %>
+      </div>
+    </nav>
+    
     <%= yield %>
   </body>
+  
 </html>
+
